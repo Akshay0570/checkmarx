@@ -11,7 +11,7 @@ pipeline {
         }
     stage('checkmarx ast scan') {
      steps { 
-        checkmarxASTScanner additionalOptions: '', baseAuthUrl: 'https://ind.iam.checkmarx.net', branchName: 'master', checkmarxInstallation: 'chekmarx Cli', credentialsId: 'Checkmarx_latest_cred', projectName: 'Demo', serverUrl: 'https://ind.ast.checkmarx.net', tenantName: 'kpmg_ast' 
+        checkmarxASTScanner additionalOptions: '', baseAuthUrl: 'https://ind.iam.checkmarx.net', branchName: 'master', checkmarxInstallation: 'chekmarx Cli', credentialsId: 'Checkmarx_latest_cred', projectName: 'SecOps_Demo', serverUrl: 'https://ind.ast.checkmarx.net', tenantName: 'kpmg_ast' 
      }
         }
 
